@@ -1,0 +1,12 @@
+import random
+
+lower_case = 'qwertyuiopasdfghjklzxcvbnm'
+upper_case = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+number= '1234567890'
+special_characters = '!@#$%^&-'
+
+summation = lower_case + upper_case + number + special_characters
+length = 7
+password = "".join (random.sample (summation, length))
+
+print(" Password is successfully generated ",password)
